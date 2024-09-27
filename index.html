@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
    <!-- Navbar -->
-   <nav class="bg-red-200 shadow-lg">
+   <nav class="bg-green-200 shadow-lg">
     <div class="container mx-auto px-4">
         <div class="flex justify-between items-center py-4">
             <div class="text-2xl font-bold text-gray-800">Mi E-Commerce</div>
@@ -21,8 +22,17 @@
         </div>
     </div>
 </nav>
-
-<script src="./assets/main.js"></script>
+   <!-- Banner -->
+   <section class="bg-cover bg-center h-96" style="background-image: url('https://via.placeholder.com/1600x600');">
+    <div class="container mx-auto h-full flex justify-center items-center">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Bienvenidos a Mi E-Commerce</h1>
+            <p class="text-lg">Descubre nuestras colecciones más exclusivas</p>
+            <a href="#" id="btn-ex" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg">Explorar ahora</a>
+        </div>
+    </div>
+</section>
+<!-- <script src="./assets/main.js"></script> -->
 <script src="./js/index.js"></script>
 </body>
 </html>
