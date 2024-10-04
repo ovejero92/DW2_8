@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombreProducto = "Remeras";
+        let precioUnistario = 2000;
+
+
+        //let cantidadDeseada = prompt(`Cuantas ${nombreProducto}($${precioUnistario}) queres comprar:`)
+        let cantidadDeseada = prompt("Cuantas "+ nombreProducto + "($"+precioUnistario+") queres comprar:");
+
+        let total = precioUnistario * cantidadDeseada;
+
+        if(cantidadDeseada >= 5) {
+            total = precioUnistario * 0.90
+        }
+        alert("El total a pagar por " + cantidadDeseada + " " + nombreProducto + " es: $" + total)
+    </script>
+</body>
+</html>

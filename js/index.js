@@ -1,46 +1,30 @@
-// const condicion = false;
-// const condicion2 = false;
-
-// if (condicion) {
-//     alert("es verdadero")
-// } 
-// else if(condicion2) {
-//    alert("condicion 2 verdadera")
-// }
-// else {
-//     alert("ninguna verdadera")
-// }
-
-// const num1 = 65;
-// //   true         false
-// if(num1 >= 18 && num1 <= 60) {
-//     alert("podes pasar")
-// }
-// else if(num1 > 60) {
-//     alert("sos mayor que 60")
-// } 
-// else {
-//     alert("sos menor")
-// }
-
 document.querySelector('#btn-ex').addEventListener('click', function(e) {
     e.preventDefault();
-    Swal.fire({
-        title: 'Selecciona la cantidad para Banana por Kg',
-        imageUrl: 'https://w7.pngwing.com/pngs/893/335/png-transparent-cavendish-banana-juice-fruit-banana-box-individual-natural-foods-dried-fruit-food.png',
+
+    function solicitarCantidad(nombreProducto, precio, stock, imagenUrl) {
+     return Swal.fire({
+        title: 'Selecciona la cantidad para '+ nombreProducto,
+        imageUrl: imagenUrl,
         imageWidth: 200,
         imageHeight: 200,
-        imageAlt: 'Banana',
+        imageAlt: nombreProducto,
         input: 'number',
-        inputLabel: 'Precio por unidad: $2000',
+        inputLabel: 'Precio por unidad: $' + precio,
         inputPlaceholder: 'Cantidad',
         inputAttributes: {
             min: 0,
-            max: 50,
+            max: stock,
             step: 1
         },
         showCancelButton: true
-    }).then((result) => {
+     })
+    }
+    let stockBanana = 10;
+    let stockPalta = 15;
+    let stockSandia = 8;
+
+
+    solicitarCantidad('Banana por Kg',2000,stockBanana,'https://w7.pngwing.com/pngs/893/335/png-transparent-cavendish-banana-juice-fruit-banana-box-individual-natural-foods-dried-fruit-food.png').then((result) => {
         let cantidadBanana = result.value ? parseInt(result.value) : 0
         parseInt(cantidadBanana)
         let subtotalBanana = cantidadBanana * 2000;
