@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+    /* 
     let contador = 1; //Inicio de variable contador = 1
     let infinito = true;
 
@@ -15,22 +16,49 @@
     contador++; // Incrementa en 1 -> contador = contador + 1
     }
    
-    let usuario = "gus"
-    let contra = "123"
-    let intentos = 0;
-do {
-    let usuarioPrompt = prompt("Ingrese su usuario");
-    let contraPrompt = prompt("Ingrese su contraseña")
+     const usuario = "gus";
+        const contrasenia = "123";
+        let intentos = 0;
+        const maxIntentos = 3; // Límite de intentos permitidos
+        let accesoConcedido = false;
 
-    if(usuarioPrompt == usuario && contraPrompt == contra) {
-    alert("adelante")
-    intentos = 4;
-    } else {
-        intentos++;
-        alert("ERROR vas " + intentos + " Intentos (EL MAXIMO ES 3)")
+        // Bucle con do while
+        do {
+            const pedir_usuario = prompt("Ingresa tu usuario:");
+            const pedir_contrasenia = prompt("Ingresa tu contraseña:");
+
+            if (usuario === pedir_usuario && contrasenia === pedir_contrasenia) {
+                accesoConcedido = true;
+                alert("Bienvenido/a a nuestra página");
+            } else {
+                intentos++;
+                if (intentos < maxIntentos) {
+                    alert("¡Usuario o contraseña incorrectos! Intentos restantes: " + (maxIntentos - intentos));
+                }
+            }
+        } while (intentos < maxIntentos && !accesoConcedido);
+
+        if (!accesoConcedido) {
+            alert("Has superado el número máximo de intentos. Acceso bloqueado.");
+        }
+    for(let i = 0; i < 5 ; i++) {
+    console.log("hola numero "+i)
     }
-} while (intentos <= 3); // Verifica la condición
-// 8 no es menor ni igual a 5 --> FALSO
+*/
+   let numeros = [21,14,56]
+   let nombres = ["Ornella","Martin","Gustavo"]
+   nombres.push("Ezequiel")
+   nombres.unshift("Ramiro")
+  //  index - eliminar - agregar
+   nombres.splice(3,0,"Gi")
+   //nombres.pop()
+   //nombres.shift()
+   for(let X = 0; X < nombres.length ; X++) {
+        console.log(`Nombre Indice ${X}: ${nombres[X]}`)
+   }
+
+   console.log(nombres.indexOf("Gustavo"));
+
     </script>
 </body>
 </html>
