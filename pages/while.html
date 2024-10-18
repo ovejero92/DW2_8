@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let contador = 1; //Inicio de variable contador = 1
+    let infinito = true;
+
+    while (contador <= 5){ // Condición -> contador menor o igual a 5
+    console.log("Hola");
+    contador++; // Incrementa en 1 -> contador = contador + 1
+    }
+   
+    let usuario = "gus"
+    let contra = "123"
+    let intentos = 0;
+do {
+    let usuarioPrompt = prompt("Ingrese su usuario");
+    let contraPrompt = prompt("Ingrese su contraseña")
+
+    if(usuarioPrompt == usuario && contraPrompt == contra) {
+    alert("adelante")
+    intentos = 4;
+    } else {
+        intentos++;
+        alert("ERROR vas " + intentos + " Intentos (EL MAXIMO ES 3)")
+    }
+} while (intentos <= 3); // Verifica la condición
+// 8 no es menor ni igual a 5 --> FALSO
+    </script>
+</body>
+</html>
