@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+ const miJugador1 = {
+     nombre:"Di Maria",
+     edad:15,
+     posicion:11
+ }
+    
+    
+     if(miJugador1.edad >= 18) {
+             console.log(`el jugador ${miJugador1.nombre} es mayor de edad `)
+         }
+        else {
+            console.warn("sos menor de edad")
+        }
+    let respuesta = confirm("¿Estas seguro?")
+
+    if(respuesta) {
+       window.close()
+    } else{ console.log("El usuario cancelo")}
+    
+    let numero = 123.4561243123;
+console.log(numero.toFixed(2)); // Imprime: 123.46
+
+
+let cantidadUsuario = prompt("Ingrese la cantidad del producto") // ocho 
+const producto = {
+    nombre:'camiseta',
+    precio:19.99,
+    cantidad:cantidadUsuario,
+};
+const precioUnitario = producto.precio;
+    const cantidadFloat = parseFloat(cantidad);
+
+    if(isNaN(cantidadFloat)) {
+        console.log('Porfavor, ingresa una cantidad valida')
+    }else {
+        const total = precioUnitario * cantidadFloat;
+        console.log(`Total a pagar: $${total.toFixed(2)}`)
+    }
+        //  miJugador1.nombre = "Leo"
+        
+        //  miJugador1.estatura = "1.69m";
+
+        //  console.log(miJugador1.nombre);
+        //  console.log(miJugador1["edad"]);
+        //  console.log(miJugador1)
+
+/*
+       
+    let arrayJugadores = [
+    {
+        id: 1,
+        nombre: "Lionel Messi",
+        posicion: "10"
+    },
+    {
+        id:2,
+        nombre: "Gabriel López",
+        posicion: "8"
+    },
+    {
+        id: 1,
+        nombre: "Lionel Messi",
+        posicion: "10"
+    },
+    {
+        id:2,
+        nombre: "Gabriel López",
+        posicion: "8"
+    },
+    {
+        id: 1,
+        nombre: "Lionel Messi",
+        posicion: "10"
+    },
+    {
+        id:2,
+        nombre: "Gabriel López",
+        posicion: "8"
+    },
+    {
+        id: 1,
+        nombre: "Lionel Messi",
+        posicion: "10"
+    },
+    {
+        id:2,
+        nombre: "Gabriel López",
+        posicion: "8"
+    },
+    ];
+
+
+for(let i = 0; i <= arrayJugadores.length; i++){
+    console.log("nombre:" + arrayJugadores[i].nombre);
+    console.log("Posicion: "+arrayJugadores[i]["posicion"]);
+    console.log(" ");
+}
+ */
+
+ let noNumero = "23"
+ let Numero = 43
+
+     let resultado = noNumero * Numero // NaN
+
+     console.log(resultado)
+
+    </script>
+</body>
+</html>
