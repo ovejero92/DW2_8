@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const producto = {
+            // propiedades 
+            Nombre:"Camiseta",
+            Precio: 250,
+            cantidad_disponible: 50,
+        }
+
+        producto.Nombre = "Zapatillas";
+        producto.categoria = "calzado";
+
+        delete producto.cantidad_disponible
+        console.dir(producto)
+
+        console.dir(document)
+    </script>
+</body>
+</html>

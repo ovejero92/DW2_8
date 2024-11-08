@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+     <!-- Navbar -->
+     <nav class="bg-white shadow-lg sticky z-10 top-0 w-full">
+        <div class="container mx-auto px-4">
+            <div class="M flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800 MiTitulo" id="titulo">Mi E-Commerce</div>
+                <ul class="M flex space-x-6 text-gray-600">
+                    <li><a id="link" href="../index.html" class="hover:text-gray-800">Inicio</a></li>
+                    <li><a href="./pages/tienda.html" class="hover:text-gray-800">Tienda</a></li>
+                    <li><a href="./pages/ofertas.html" class="hover:text-gray-800">Ofertas</a></li>
+                    <li><a href="./pages/contacto.html" class="hover:text-gray-800">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="pre">
+        precio 300
+    </div>
+    <img src="" alt="" >
+    <a href=""></a>
+
+    <script>
+
+    console.log(document.getElementById("titulo"))
+    console.log(document.getElementsByClassName("M"))
+    console.log(document.getElementsByTagName("div"))
+
+    console.log(document.querySelector("#titulo"))
+    console.log(document.querySelectorAll(".M"))
+
+    const titulo = document.getElementById("titulo")
+    titulo.style.color = "orange"
+
+    const lista = document.getElementsByTagName("li")
+
+    lista[1].style.background = "red"
+    lista[1].style.padding = "2px"
+    lista[1].style.borderRadius = "12px"
+    lista[1].style.color = "white"
+
+
+    let link = document.getElementById("link")
+    link.setAttribute("href","../index.html")
+
+    let pre = document.getElementById("pre")
+    pre.innerText = "precio 400"
+    pre.innerHTML = "<s class='text-red-800'>precio 300</s> precio 200 "
+
+    </script>
+</body>
+</html>
