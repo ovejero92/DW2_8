@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo</h1>
+    <button  id="miBtn"> alerta</button>
+
+    <script>
+    let miBtn = document.getElementById("miBtn")
+
+    miBtn.addEventListener("dblclick", () => {
+    
+    } )
+
+    miBtn.addEventListener("click", (e)=> {
+        console.log(e)
+        e.target.innerText = "otra cosa"
+        e.target.style.color = "red"
+    })
+let miTitulo = document.getElementById("titulo");
+miTitulo.addEventListener('mouseover', function() {
+    Math.floor(Math. random() * (255 - 0 + 1) + 0)
+    miTitulo.style.backgroundColor = 'rgb(20,20,15)' ;
+});
+miTitulo.addEventListener('mouseout', function() {
+    miTitulo.style.backgroundColor = 'lightblue';
+});
+    function alerta() {
+        alert("Hola como estas ")
+    }
+    
+    </script>
+</body>
+</html>

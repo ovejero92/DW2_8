@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="342h">dasjkdhasjdsa</h3>
+    <script>
+        const productos = ["prod 1","prod 2","prod 3","prod 4","prod 5","prod 6"]
+        
+        for(let producto of productos) {
+            let h2 = document.createElement("h2")
+            h2.innerHTML = producto;
+            document.body.appendChild(h2)
+        }
+        console.log(productos[1])
+        
+        for(i = 0 ; i < productos.length ; i++) {
+            console.log(productos[i])
+        }
+        
+    </script>
+</body>
+</html>

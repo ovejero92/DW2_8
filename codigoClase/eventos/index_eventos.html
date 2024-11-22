@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./eventos.css">
+</head>
+<body data-dark>
+    <!-- FOCUS & BLUR -->
+    <form action="" >
+        <label for="email">Ingrese su email:</label>
+        <input type="email" name="email" id="email">
+        <br> <br>
+        <label for="clave">Ingrese su contraseña:</label>
+        <input type="password" name="clave" id="clave" onfocus="foco(this)">
+        <input type="submit" type="button" value="Send">
+    </form>
+    <!-- Keyup -->
+    <h2>Escribe algo</h2>
+    <input type="text" id="text" placeholder="Escibe algo aqui...">
+    <span id="mostrar-texto">Input Vacio</span>
+    <!-- EventoMause-->
+    <div class="caja" onmouseenter="eventoME()">Evento mouse</div>
+    <div class="caja" onmouseleave="eventoLE()">Evento mouse</div>
+    <div class="caja" onmouseout="eventoMV()">Evento mouse</div>
+    <div class="caja" onmouseup="eventoUP()">Evento mouse</div>
+
+    <button class="scroll-top-btn hidden">&#11014;</button>
+     
+    <!--DarkMode-->
+    <button class="dark-theme-btn" id="luna">🌙</button>
+    
+    <!-- load -->
+    <h3>Primer titulo</h3>
+    <!--eventos mouse-->
+    <script src="./eventos.js"></script>
+</body>
+</html>
